@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DoubleLoops | Intelligent Digital Solutions</title>
-    <meta name="description" content="DoubleLoops provides premium website creation, SEO optimization, advertisement, data analytics, ERP portals, and website management.">
+    <meta name="description"
+        content="DoubleLoops provides premium website creation, SEO optimization, advertisement, data analytics, ERP portals, and website management.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="intro-animation">
         <div class="intro-logo">
@@ -25,7 +28,9 @@
                             <stop offset="100%" stop-color="#555555" />
                         </linearGradient>
                     </defs>
-                    <path class="infinity-path" pathLength="100" d="M10 4 C13 4, 16 7, 20 10 C24 13, 27 16, 30 16 C33.313 16, 36 13.313, 36 10 C36 6.686, 33.313, 4, 30 4 C27 4, 24 7, 20 10 C16 13, 13 16, 10 16 C6.686 16, 4 13.313, 4 10 C4 6.686, 6.686, 4, 10 4 Z" fill="none" stroke="url(#intro-metal-grad)" stroke-width="3" stroke-linecap="round"/>
+                    <path class="infinity-path" pathLength="100"
+                        d="M10 4 C13 4, 16 7, 20 10 C24 13, 27 16, 30 16 C33.313 16, 36 13.313, 36 10 C36 6.686, 33.313, 4, 30 4 C27 4, 24 7, 20 10 C16 13, 13 16, 10 16 C6.686 16, 4 13.313, 4 10 C4 6.686, 6.686, 4, 10 4 Z"
+                        fill="none" stroke="url(#intro-metal-grad)" stroke-width="3" stroke-linecap="round" />
                 </svg>
             </span>
             <div class="intro-text-wrapper">
@@ -49,7 +54,9 @@
                                 <stop offset="100%" stop-color="#555555" />
                             </linearGradient>
                         </defs>
-                        <path d="M10 4 C13 4, 16 7, 20 10 C24 13, 27 16, 30 16 C33.313 16, 36 13.313, 36 10 C36 6.686, 33.313, 4, 30 4 C27 4, 24 7, 20 10 C16 13, 13 16, 10 16 C6.686 16, 4 13.313, 4 10 C4 6.686, 6.686, 4, 10 4 Z" fill="none" stroke="url(#metal-grad)" stroke-width="3" stroke-linecap="round"/>
+                        <path
+                            d="M10 4 C13 4, 16 7, 20 10 C24 13, 27 16, 30 16 C33.313 16, 36 13.313, 36 10 C36 6.686, 33.313, 4, 30 4 C27 4, 24 7, 20 10 C16 13, 13 16, 10 16 C6.686 16, 4 13.313, 4 10 C4 6.686, 6.686, 4, 10 4 Z"
+                            fill="none" stroke="url(#metal-grad)" stroke-width="3" stroke-linecap="round" />
                     </svg>
                 </span>ps
             </a>
@@ -62,20 +69,72 @@
     </nav>
 
     <header class="hero">
-        <div class="hero-content fade-in">
-            <h1>Elevating Possibilities in the <span class="text-gradient">Digital Sphere</span></h1>
-            <p>We forge intelligent web platforms, data-driven SEO, and comprehensive ERP systems tailored for enterprise growth.</p>
-            <div class="hero-actions">
-                <a href="#services" class="btn-secondary">Explore Services</a>
-                <a href="#contact" class="btn-primary">Start a Project</a>
+        <!-- Animated background canvas -->
+        <canvas id="hero-canvas" class="hero-canvas"></canvas>
+
+        <div class="hero-wrapper">
+            <!-- LEFT: Content -->
+            <div class="hero-content fade-in">
+                <div class="hero-badge">
+                    <span class="hero-badge-dot"></span>
+                    Trusted by 50+ enterprises worldwide
+                </div>
+
+                <h1 class="hero-heading">
+                    Elevating<br>
+                    <span class="hero-highlight">Digital</span>
+                    <span class="text-gradient"> Possibilities</span>
+                </h1>
+
+                <p class="hero-sub">We forge intelligent web platforms, data-driven SEO, and comprehensive ERP systems tailored for enterprise growth.</p>
+
+                <div class="hero-actions">
+                    <a href="#services" class="btn-secondary">Explore Services</a>
+                    <a href="#contact" class="btn-primary">Start a Project →</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">+125%</span>
+                        <span class="hero-stat-label">Traffic Growth</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">99.9%</span>
+                        <span class="hero-stat-label">Uptime SLA</span>
+                    </div>
+                    <div class="hero-stat-divider"></div>
+                    <div class="hero-stat">
+                        <span class="hero-stat-num">50+</span>
+                        <span class="hero-stat-label">Clients Served</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: 3D Sphere Visual -->
+            <div class="hero-visual fade-in">
+                <div class="sphere-glow"></div>
+                <div class="sphere-container">
+                    <div class="sphere"></div>
+                    <div class="orbit orbit-a"></div>
+                    <div class="orbit orbit-b"></div>
+                    <div class="orbit orbit-c"></div>
+                </div>
+                <!-- Floating glass cards -->
+                <div class="hero-chip chip-1">
+                    <span class="chip-icon">📈</span>
+                    <span>Revenue +85%</span>
+                </div>
+                <div class="hero-chip chip-2">
+                    <span class="chip-icon">⚡</span>
+                    <span>0.8s Load Time</span>
+                </div>
             </div>
         </div>
-        <div class="hero-visual fade-in">
-            <div class="sphere-container">
-                <div class="sphere"></div>
-                <div class="orbit"></div>
-                <div class="orbit orbit-2"></div>
-            </div>
+
+        <!-- Scroll indicator -->
+        <div class="hero-scroll">
+            <div class="hero-scroll-line"></div>
         </div>
     </header>
 
@@ -85,46 +144,46 @@
                 <div>branding</div>
                 <div>is</div>
             </div>
-                <div class="b-track">
-                    <span class="b-term">value</span>
-                    <span class="b-term">trust</span>
-                    <span class="b-term">connection</span>
-                    <span class="b-term">promise</span>
-                    <span class="b-term">impact</span>
-                    <span class="b-term">influence</span>
-                    <span class="b-term">storytelling</span>
-                    <span class="b-term">loyalty</span>
-                    <span class="b-term">experience</span>
-                    <span class="b-term">identity</span>
-                    <span class="b-term">innovation</span>
-                    <span class="b-term">recognition</span>
-                    <span class="b-term">growth</span>
-                    <span class="b-term">prestige</span>
-                    <span class="b-term">status</span>
-                    <span class="b-term">reliability</span>
-                    <span class="b-term">visibility</span>
-                    <span class="b-term">reputation</span>
-                    <!-- duplicate for infinite scroll -->
-                    <span class="b-term">value</span>
-                    <span class="b-term">trust</span>
-                    <span class="b-term">connection</span>
-                    <span class="b-term">promise</span>
-                    <span class="b-term">impact</span>
-                    <span class="b-term">influence</span>
-                    <span class="b-term">storytelling</span>
-                    <span class="b-term">loyalty</span>
-                    <span class="b-term">experience</span>
-                    <span class="b-term">identity</span>
-                    <span class="b-term">innovation</span>
-                    <span class="b-term">recognition</span>
-                    <span class="b-term">growth</span>
-                    <span class="b-term">prestige</span>
-                    <span class="b-term">status</span>
-                    <span class="b-term">reliability</span>
-                    <span class="b-term">visibility</span>
-                    <span class="b-term">reputation</span>
-                </div>
+            <div class="b-track">
+                <span class="b-term">value</span>
+                <span class="b-term">trust</span>
+                <span class="b-term">connection</span>
+                <span class="b-term">promise</span>
+                <span class="b-term">impact</span>
+                <span class="b-term">influence</span>
+                <span class="b-term">storytelling</span>
+                <span class="b-term">loyalty</span>
+                <span class="b-term">experience</span>
+                <span class="b-term">identity</span>
+                <span class="b-term">innovation</span>
+                <span class="b-term">recognition</span>
+                <span class="b-term">growth</span>
+                <span class="b-term">prestige</span>
+                <span class="b-term">status</span>
+                <span class="b-term">reliability</span>
+                <span class="b-term">visibility</span>
+                <span class="b-term">reputation</span>
+                <!-- duplicate for infinite scroll -->
+                <span class="b-term">value</span>
+                <span class="b-term">trust</span>
+                <span class="b-term">connection</span>
+                <span class="b-term">promise</span>
+                <span class="b-term">impact</span>
+                <span class="b-term">influence</span>
+                <span class="b-term">storytelling</span>
+                <span class="b-term">loyalty</span>
+                <span class="b-term">experience</span>
+                <span class="b-term">identity</span>
+                <span class="b-term">innovation</span>
+                <span class="b-term">recognition</span>
+                <span class="b-term">growth</span>
+                <span class="b-term">prestige</span>
+                <span class="b-term">status</span>
+                <span class="b-term">reliability</span>
+                <span class="b-term">visibility</span>
+                <span class="b-term">reputation</span>
             </div>
+        </div>
         </div>
     </section>
 
@@ -139,7 +198,8 @@
                 <div class="card-content">
                     <div class="icon">🖥️</div>
                     <h3>Website Creation</h3>
-                    <p>Bespoke, high-performance web applications built with modern architectures for maximum impact.</p>
+                    <p>Bespoke, high-performance web applications built with modern architectures for maximum impact.
+                    </p>
                 </div>
             </div>
             <div class="service-card slide-up delay-2">
@@ -147,7 +207,8 @@
                 <div class="card-content">
                     <div class="icon">🚀</div>
                     <h3>SEO Optimization</h3>
-                    <p>Data-driven strategies to dominate search rankings and drive qualified organic traffic to your brand.</p>
+                    <p>Data-driven strategies to dominate search rankings and drive qualified organic traffic to your
+                        brand.</p>
                 </div>
             </div>
             <div class="service-card slide-up delay-3">
@@ -163,7 +224,8 @@
                 <div class="card-content">
                     <div class="icon">📊</div>
                     <h3>Data Analytics</h3>
-                    <p>Deep insights and predictive modeling to transform raw data into actionable business intelligence.</p>
+                    <p>Deep insights and predictive modeling to transform raw data into actionable business
+                        intelligence.</p>
                 </div>
             </div>
             <div class="service-card slide-up delay-2">
@@ -171,7 +233,8 @@
                 <div class="card-content">
                     <div class="icon">⚙️</div>
                     <h3>ERP Portal</h3>
-                    <p>Custom enterprise resource planning systems to streamline your operations and internal workflows.</p>
+                    <p>Custom enterprise resource planning systems to streamline your operations and internal workflows.
+                    </p>
                 </div>
             </div>
             <div class="service-card slide-up delay-3">
@@ -189,7 +252,8 @@
         <div class="analytics-container">
             <div class="analytics-text">
                 <h2>Intelligent Data Infrastructure</h2>
-                <p>Monitor your growth, manage resources, and optimize performance from a unified, state-of-the-art dashboard.</p>
+                <p>Monitor your growth, manage resources, and optimize performance from a unified, state-of-the-art
+                    dashboard.</p>
                 <div class="stats">
                     <div class="stat-item">
                         <span class="stat-number">+125%</span>
@@ -236,7 +300,8 @@
         <div class="contact-container slide-up">
             <div class="contact-info">
                 <h2>Let's Build the Future</h2>
-                <p>Ready to transform your digital presence? Reach out to our team of experts and let's discuss your next big move.</p>
+                <p>Ready to transform your digital presence? Reach out to our team of experts and let's discuss your
+                    next big move.</p>
             </div>
             <form class="contact-form">
                 <div class="form-group">
@@ -247,22 +312,39 @@
                     <input type="email" id="email" required placeholder=" ">
                     <label for="email">Email Address</label>
                 </div>
-                <div class="form-group">
-                    <select id="service" required>
+                <div class="form-group custom-select-wrap">
+                    <!-- Hidden real select for form submission -->
+                    <select id="service" required style="display:none">
                         <option value="" disabled selected>Select a Service</option>
-                        <option value="website">Website Creation</option>
-                        <option value="seo">SEO Optimization</option>
-                        <option value="ads">Advertisement</option>
-                        <option value="analytics">Data Analytics</option>
-                        <option value="erp">ERP Portal</option>
-                        <option value="management">Website Management</option>
+                        <option value="Website Creation">Website Creation</option>
+                        <option value="SEO Optimization">SEO Optimization</option>
+                        <option value="Advertisement">Advertisement</option>
+                        <option value="Data Analytics">Data Analytics</option>
+                        <option value="ERP Portal">ERP Portal</option>
+                        <option value="Website Management">Website Management</option>
                     </select>
+                    <!-- Custom visible dropdown -->
+                    <div class="cs-trigger" id="cs-trigger">
+                        <span class="cs-value" id="cs-value">Select a Service</span>
+                        <svg class="cs-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+                    </div>
+                    <ul class="cs-list" id="cs-list">
+                        <li data-val="Website Creation">🖥️ Website Creation</li>
+                        <li data-val="SEO Optimization">🚀 SEO Optimization</li>
+                        <li data-val="Advertisement">📈 Advertisement</li>
+                        <li data-val="Data Analytics">📊 Data Analytics</li>
+                        <li data-val="ERP Portal">⚙️ ERP Portal</li>
+                        <li data-val="Website Management">🛠️ Website Management</li>
+                    </ul>
                 </div>
                 <div class="form-group">
                     <textarea id="message" rows="4" required placeholder=" "></textarea>
                     <label for="message">Project Details</label>
                 </div>
-                <button type="submit" class="btn-primary">Send Message</button>
+                <button type="submit" class="btn-primary btn-whatsapp">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Send via WhatsApp
+                </button>
             </form>
         </div>
     </section>
@@ -273,7 +355,9 @@
                 <a href="#" class="logo">
                     DoubleL<span class="oo-infinity">
                         <svg viewBox="0 0 40 20" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10 4 C13 4, 16 7, 20 10 C24 13, 27 16, 30 16 C33.313 16, 36 13.313, 36 10 C36 6.686, 33.313, 4, 30 4 C27 4, 24 7, 20 10 C16 13, 13 16, 10 16 C6.686 16, 4 13.313, 4 10 C4 6.686, 6.686, 4, 10 4 Z" fill="none" stroke="url(#metal-grad)" stroke-width="3" stroke-linecap="round"/>
+                            <path
+                                d="M10 4 C13 4, 16 7, 20 10 C24 13, 27 16, 30 16 C33.313 16, 36 13.313, 36 10 C36 6.686, 33.313, 4, 30 4 C27 4, 24 7, 20 10 C16 13, 13 16, 10 16 C6.686 16, 4 13.313, 4 10 C4 6.686, 6.686, 4, 10 4 Z"
+                                fill="none" stroke="url(#metal-grad)" stroke-width="3" stroke-linecap="round" />
                         </svg>
                     </span>ps
                 </a>
@@ -293,4 +377,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
